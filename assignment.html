@@ -87,6 +87,17 @@
         letter-spacing: 1px;
       }
 
+      .shuffle-button {
+        width: 100%;
+        margin-top: 15px;
+        background: #ff6b6b;
+        border: none;
+        font-weight: bold;
+      }
+      .shuffle-button:hover {
+        background: #ff5252;
+      }
+      
       /* Διόρθωση θέσης Stats */
       .rs-base {
         left: auto !important;  
@@ -115,6 +126,8 @@
         <button onclick="rotateSlice('F')"> FRONT</button>
         <button onclick="rotateSlice('B')"> BACK</button>
       </div>
+
+      <button class="shuffle-button" onclick="shuffleCube()">SHUFFLE</button>
     </div>
 
     <a-scene stats>
@@ -299,6 +312,30 @@
         });
       }
       window.rotateSlice = rotateSlice;
+
+      // Shuffle function
+      function shuffleCube() {
+        if (isAnimated) return; 
+
+        const faces = Object.keys(sliceDefs);
+        const moves = 10; 
+
+        let shuffleMoves = [];
+        for (let i = 0; i < moves; i++) {
+          const randomFace = faces[Math.floor(Math.random() * faces.length)];
+          shuffleMoves.push(randomFace);
+        }
+
+        let delay = 0;
+        shuffleMoves.forEach(face => {
+          setTimeout(() => {
+            rotateSlice(face);
+          }, delay);
+          delay += 700; 
+        });
+      }
+      window.shuffleCube = shuffleCube;
     </script>
   </body>
 </html>
+
