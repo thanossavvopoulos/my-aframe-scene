@@ -5,27 +5,26 @@ A WebVR interactive application developed using the **A-Frame** framework for th
 
 🔗 **Live Demo:** [Click here to view the scene](https://thanossavvopoulos.github.io/my-aframe-scene/)
 
-## 🚀 Features
+## Features
 
 * **Core Mechanics:** Full rotation logic for all slices (Up, Down, Left, Right, Front, Back).
 * **Space Christmas Theme:** Custom environment combining a space skybox with a snowy terrain and holiday decorations.
 * **Custom 3D Assets:** Includes custom `.glb` models (Christmas Trees, 3D Name Text) created in Tinkercad.
 * **Interactive UI:** Modern "Glassmorphism" control panel for cube manipulation.
 * **Game Logic:**
-    * 🔀 **Shuffle:** Automated randomization algorithm.
+    *  **Shuffle:** Automated randomization algorithm.
     * **Animation Locking:** Prevents user input during animations to ensure geometric integrity.
 * **Performance Monitoring:** Integrated stats (FPS, Draw Calls, Triangles) for better optimization analysis.
 
-## 🎮 Controls
+## Controls
 
 The scene can be controlled via the on-screen menu or mouse interaction:
 
 * **Menu Buttons:** Rotate specific slices of the cube.
 * **SHUFFLE:** Randomizes the cube.
-* **RESET:** Solves the cube.
-* **Mouse Drag:** Rotate the camera view (Orbit Controls).
+* **Mouse Drag:** Rotate the camera view.
 
-## 🛠️ Technical Details
+## Technical Details
 
 * **Framework:** [A-Frame v1.7.0](https://aframe.io/)
 * **Languages:** HTML5, CSS3, JavaScript (ES6).
@@ -34,21 +33,8 @@ The scene can be controlled via the on-screen menu or mouse interaction:
 ### Bonus / Experimentation
 For the bonus part of the assignment, the standard cubelets were replaced with **High-Poly Candy Cane models**. This experiment demonstrated the impact of complex geometry on rendering performance (increased Draw Calls and Triangle count).
 
-## 📦 How to Run Locally
-
-No server installation is required as this is a static web page.
-
-1.  Clone the repository:
-    ```bash
-    git clone [https://github.com/thanossavvopoulos/my-aframe-scene.git](https://github.com/thanossavvopoulos/my-aframe-scene.git)
-    ```
-2.  Open `index.html` in any modern web browser.
-
-## 👤 Author
+## Author
 
 **Thanos Savvopoulos**
 * **Course:** Computer Graphics
 * **Department Of Informatics Ionian University**
-
----
-*University Project | 2025*
